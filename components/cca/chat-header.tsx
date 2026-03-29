@@ -60,10 +60,10 @@ export function ChatHeader() {
               מוסמכים כגון משרד העבודה והמכון לבטיחות וגיהות.
             </p>
 
-            <div className="rounded-md bg-accent/10 p-3 text-accent-foreground">
-              <p className="text-xs">
-                <strong>הערה חשובה:</strong> המידע המוצג נועד לסיוע בלבד ואינו מהווה תחליף
-                לייעוץ מקצועי. יש לאמת את המידע מול המקורות הרשמיים.
+            <div className="rounded-lg bg-accent/10 px-4 py-3">
+              <p className="text-xs text-muted-foreground">
+                <strong className="text-accent">הערה חשובה:</strong> המידע המוצג נועד לסיוע בלבד
+                ואינו מהווה תחליף לייעוץ מקצועי. יש לאמת את המידע מול המקורות הרשמיים.
               </p>
             </div>
 
