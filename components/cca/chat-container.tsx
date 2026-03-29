@@ -3,7 +3,6 @@
 import { useRef, useEffect, useState } from 'react'
 import { useChat } from '@ai-sdk/react'
 import { DefaultChatTransport } from 'ai'
-import { ChatHeader } from './chat-header'
 import { ChatInput } from './chat-input'
 import { MessageBubble } from './message-bubble'
 import { WelcomeMessage } from './welcome-message'
@@ -34,8 +33,6 @@ export function ChatContainer() {
 
   return (
     <div className="flex h-dvh flex-col bg-background">
-      <ChatHeader />
-      
       <div
         ref={scrollRef}
         className="chat-scrollbar flex-1 overflow-y-auto px-4 py-4"

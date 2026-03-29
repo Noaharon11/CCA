@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Rubik, Noto_Sans_Hebrew } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { AppShell } from '@/components/navigation/app-shell'
 import './globals.css'
 
 const rubik = Rubik({ 
@@ -54,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="he" dir="rtl">
       <body className={`${rubik.variable} ${notoHebrew.variable} font-sans antialiased`}>
-        {children}
+        <AppShell>{children}</AppShell>
         <Analytics />
       </body>
     </html>
